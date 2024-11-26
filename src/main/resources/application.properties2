@@ -1,0 +1,22 @@
+spring.application.name=TestProject1
+#swagger-ui ??
+#swagger-ui ?? ??(http://localhost:4000/swagger-ui/index.html)
+springdoc.use-fqn=true
+#springdoc.swagger-ui.path=/swagger-ui.html
+
+#OpenAPI JSON ?? ?? ?? (http://localhost:4000/api-docs)
+springdoc.api-docs.path=/api-docs
+
+#?? ?? ??? json
+springdoc.default-consumes-media-type=application/json
+springdoc.default-produces-media-type=application/json
+
+#ui ??? ? ??
+springdoc.swagger-ui.operations-sorter=alpha
+springdoc.swagger-ui.tags-sorter=alpha
+
+#swagger url ????, json? ? config ?? ?? ????? ???? swagger-ui? ????? ?
+springdoc.swagger-ui.disable-swagger-default-url=true
+springdoc.swagger-ui.doc-expansion=none
+
+logging.level.root=INFO

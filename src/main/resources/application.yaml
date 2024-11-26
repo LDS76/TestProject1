@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: TestProject1
+springdoc:
+  use-fqn: true
+  swagger-ui:
+    disable-swagger-default-url: false
+    showCommonExtensions: true
+    defaultModelRendering: "example"   # ("example" | "model")
+    defaultModelsExpandDepth: 5
+    defaultModelExpandDepth: 5
+    operations-sorter: method
+    tags-sorter: alpha
+    #validatorUrl : 'none'   # 'none' : no validation
+    path: /swagger-ui.html
+
+  api-docs:
+    path: /swagger-ui/api-docs
+    enabled: true
+    resolve-schema-properties: true
+  writer-with-order-by-keys: true
+
+logging:
+  level:
+    root: INFO
+    io:
+      swagger: TRACE
+server:
+  port: 8080
+  shutdown: graceful
+  servlet:
+    context-path: /
